@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+/* NAVBAR */
+#navbar {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: honeydew;
+    padding: 1rem;
+    border-right: solid 2px rgb(154, 180, 154);
+}
+
+#navbar > h2 {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: #333;
+    padding-bottom: 1rem;
+    border-bottom: solid 2px lightsalmon;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 0 0.5rem 1rem;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    line-height: 1.4;
+    transition: all 120ms ease-in-out;
+}
+
+.nav-link:hover {
+    color: lightsalmon;
+    text-decoration: underline;
+}
+
+.nav-link > i {
+    color: lightsalmon;
+}
+
+.nav-link:hover > i {
+    color: #333;
+}
+
+/* MAIN DOC */
+#main-doc {
+    position: absolute;
+    left: 320px;
+    padding-top: 1rem;
+}
+
+.main-section {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.main-section h2 {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.main-section p {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    line-height: 1.4;
+}
+
+.main-section li {
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.main-section code {
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #eee;
+    font-family: "Consolas", monospace;
+    line-height: 1.4;
+    color: #555;
+}
+
+@media (max-width: 780px) {
+    body {
+        padding: 1rem;
+    }
+    #navbar {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        position: static;
+        border-right: none;
+        border-bottom: solid 2px rgb(154, 180, 154);
+    }
+
+    #navbar div {
+        height: 250px;
+        overflow-y: scroll;
+    }
+
+    #main-doc {
+        width: 100%;
+        position: static;
+    }
+}
